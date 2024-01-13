@@ -3,7 +3,7 @@
 ### Description
 This is a simple game. The computer will come up with a random number from a given range of numbers. Then, the user will be able to input numbers until the user guesses the random number correctly.
 
-[Difficulty](###Difficulty)
+[Difficulty]
 Beginner
 
 ### Prerequisites
