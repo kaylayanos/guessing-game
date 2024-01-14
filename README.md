@@ -124,4 +124,14 @@ targetNumber = generateRandomNumber();
 guessInput.value = '';
 message.textContent = 'Guess a number between 1 and 5';
 ```
-5. 
+5. The last function we need is the `showPlayAgainButton()`. This will show the play again button once the user has correctly guessed the randomly generated number.
+   ```
+   function showPlayAgainButton() {
+     const playAgainButton = document.createElement('button');
+     playAgainButton.textContent = 'Play Again';
+     playAgainButton.id = 'playAgainButton';
+     playAgainButton.addEventListener('click', playAgain);
+     const body = document.body;
+     body.appendChild(playAgainButton);
+   }
+   ```
