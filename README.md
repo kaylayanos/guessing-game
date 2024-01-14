@@ -102,3 +102,26 @@ if (userGuess === targetNumber) {
    message.classList.remove('success-message');
 }
 ```
+4. Now we will make the `playAgain()` function that will be implemented into a `showPlayAgainButton()` function later. This function will reset the game when the play again button is pressed.
+
+Part A: Declaring variables:
+```
+function playAgain() {
+   const message = document.getElementById('message');
+   const playAgainButton = document.getElementById('playAgainButton');
+   const guessInput = document.getElementById('guessInput');
+}
+```
+
+Part B: Removing the play again button and clearing input. We want to add these few lines of code after declaring the variables and before the closing brackets:
+```
+if (playAgainButton) {
+   playAgainButton.remove();
+}
+
+targetNumber = generateRandomNumber();
+
+guessInput.value = '';
+message.textContent = 'Guess a number between 1 and 5';
+```
+5. 
