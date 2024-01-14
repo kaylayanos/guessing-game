@@ -3,7 +3,7 @@
 ### Description
 This is a simple game. The computer will come up with a random number from a given range of numbers. Then, the user will be able to input numbers until the user guesses the random number correctly.
 
-[Difficulty]
+### Difficulty
 Beginner
 
 ### Prerequisites
@@ -19,6 +19,10 @@ Create the following files:
 - script.js
 
 ### Part 1: HTML
+1. Start by changing the title tags to "Guessing Game":
+   ```
+   <title>Guessing Game
+   ```
 
 ### Part 2: CSS
 
