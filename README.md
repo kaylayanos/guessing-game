@@ -32,8 +32,7 @@ Create the following files:
    ```
    <body>
       <h1>Guessing Game!</h1>
-     <h2>Description</h2>
-     <p>The computer will randomly choose a number from a specified range and it is your task to guess the number!</p>
+      <p>Description of game</p>
 
      <div>
          <h1>Guessing Game</h1>
@@ -42,10 +41,31 @@ Create the following files:
          <button onclick="checkGuess()">Submit Guess</button>
          <script src="script.js"></script>
      </div>
+   
      <script src="script.js"></script>
    </body>
    ```
 
 ### Part 2: CSS
+1. Target the `body` and `div` element:
+   Set the `font-family' to 'Arial, sans-serif'.
+   Set `text-align` to `center`.
+2. Target the `h1` element:
+   Set the `color` to `#3498db`.
+3. Target the `messages` id. This will be implemented in part 3 in the script.js file:
+   Set the `font-size` to `18px`.
+4. Target the `input` element:
+   Set the `padding` to `5px`.
+   Set the `margin` to `10px`.
+5. Target the `button` element:
+   Set the `padding` to `8px 16px`.
+   Set the `font-size` to `16px`.
+   Set the `background-color` to `3498db`.
+   Set the `color` to `#fff`.
+   Set the `border` to `none`.
+6. Target the `playAgainButton` id:
+   Set the `margin-top` to `20px`
+   Set the `background-color` to `3498db`
+  
 
 ### Part 3: JS
