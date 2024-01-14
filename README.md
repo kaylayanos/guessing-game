@@ -69,3 +69,15 @@ Create the following files:
   
 
 ### Part 3: JS
+1. First we are going to declare 2 variables that we will use for the other functions.
+   ```
+   let targetNumber = generateRandomNumber();
+   let hasPlayed = false;
+   ```
+2. Now, we are going to make a `generateRandomNumber()` function that generates a random number. Right now, the range of numbers that it can be is from 1 to 5, but you can always change this.
+   ```
+   function generateRandomNumber() {
+      return Math.floor(Math.random() * 5) + 1;
+   ```
+3. Now, we will make a `checkguess()` function that will check if the user input is the number that was randomly generated from the `generateRandomNumber()` function from the previous step.
+   ```
