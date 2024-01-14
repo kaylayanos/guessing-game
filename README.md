@@ -78,6 +78,27 @@ Create the following files:
    ```
    function generateRandomNumber() {
       return Math.floor(Math.random() * 5) + 1;
+   }
    ```
-3. Now, we will make a `checkguess()` function that will check if the user input is the number that was randomly generated from the `generateRandomNumber()` function from the previous step.
-   ```
+3. Now, we will make a `checkguess()` function that will check if the user input is the number that was randomly generated from the `generateRandomNumber()` function from the previous step. We are going to break this function down into two parts:
+
+Part A: Declaring variables
+```
+function checkGuess() {
+   const guessInput = document.getElementById('guessInput');
+   const userGuess = parseInt(guesssInput.value);
+   const message = document.getElementById('message');
+   const playAgainButton = document.getElementById('playAgainButton');
+}
+```
+
+Part B: Check is the user guess is the same as the random generated number. If the number is correct, display correct message and show play again button, but if number is incorrect, display incorrect message:
+```
+if (userGuess === targetNumber) {
+   message.textContent = 'Congratulations! You guessed the correct number!';
+   showPlayAgainButton();
+   } else {
+   message.textContent = `Wrong guess. Try again!`;
+   message.classList.remove('success-message');
+}
+```
