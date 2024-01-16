@@ -82,27 +82,34 @@ Create the following files:
    ```
 3. Now, we will make a `checkguess()` function that will check if the user input is the number that was randomly generated from the `generateRandomNumber()` function from the previous step. We are going to break this function down into two parts:
 
-Part A: Declaring variables
-```
-function checkGuess() {
-   const guessInput = document.getElementById('guessInput');
-   const userGuess = parseInt(guesssInput.value);
-   const message = document.getElementById('message');
-   const playAgainButton = document.getElementById('playAgainButton');
-}
-```
+   Part A: Declaring variables
+   ```
+   function checkGuess() {
+      const guessInput = document.getElementById('guessInput');
+      const userGuess = parseInt(guesssInput.value);
+      const message = document.getElementById('message');
+      const playAgainButton = document.getElementById('playAgainButton');
+   }
+   ```
 
-Part B: Check is the user guess is the same as the random generated number. If the number is correct, display correct message and show play again button, but if number is incorrect, display incorrect message:
-```
-if (userGuess === targetNumber) {
-   message.textContent = 'Congratulations! You guessed the correct number!';
-   showPlayAgainButton();
-   } else {
-   message.textContent = `Wrong guess. Try again!`;
-   message.classList.remove('success-message');
-}
-```
-4. Now we will make the `playAgain()` function that will be implemented into a `showPlayAgainButton()` function later. This function will reset the game when the play again button is pressed.
+   Part B: Check is the user guess is the same as the random generated number. If the number is correct, display correct message and show play again button, but if number is incorrect, display incorrect message:
+   If user's guess is the same as random generated number:
+   ```
+   if (userGuess === targetNumber) {
+      showPlayAgainButton();
+      message.textContent = 'Congratulations! You guessed the correct number!';
+   }
+   ```
+   If user's guess is not the same as random generated number:
+   ```
+   else {
+        message.textContent = 'Wrong guess. Try again!';
+        message.classList.remove('success-message');
+    }
+   ```
+   Make sure that the if and else statements are inside the checkGuess() function.
+   
+5. Now we will make the `playAgain()` function that will be implemented into a `showPlayAgainButton()` function later. This function will reset the game when the play again button is pressed.
 
 Part A: Declaring variables:
 ```
