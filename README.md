@@ -111,26 +111,26 @@ Create the following files:
    
 5. Now we will make the `playAgain()` function that will be implemented into a `showPlayAgainButton()` function later. This function will reset the game when the play again button is pressed.
 
-Part A: Declaring variables:
-```
-function playAgain() {
-   const message = document.getElementById('message');
-   const playAgainButton = document.getElementById('playAgainButton');
-   const guessInput = document.getElementById('guessInput');
-}
-```
+   Part A: Declaring variables:
+   ```
+   function playAgain() {
+      const message = document.getElementById('message');
+      const playAgainButton = document.getElementById('playAgainButton');
+      const guessInput = document.getElementById('guessInput');
+   }
+   ```
 
-Part B: Removing the play again button and clearing input. We want to add these few lines of code after declaring the variables and before the closing brackets:
-```
-if (playAgainButton) {
-   playAgainButton.remove();
-}
+   Part B: Removing the play again button and clearing input. We want to add these few lines of code after declaring the variables and before the closing brackets:
+   ```
+   if (playAgainButton) {
+      playAgainButton.remove();
+   }
 
-targetNumber = generateRandomNumber();
+   targetNumber = generateRandomNumber();
 
-guessInput.value = '';
-message.textContent = 'Guess a number between 1 and 5';
-```
+   guessInput.value = '';
+   message.textContent = 'Guess a number between 1 and 5';
+   ```
 5. The last function we need is the `showPlayAgainButton()`. This will show the play again button once the user has correctly guessed the randomly generated number.
    ```
    function showPlayAgainButton() {
