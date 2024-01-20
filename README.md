@@ -142,3 +142,6 @@ Create the following files:
      body.appendChild(playAgainButton);
    }
    ```
+
+### Stretch Goals
+1. Implementing a point system.
