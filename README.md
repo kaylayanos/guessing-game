@@ -74,38 +74,32 @@ Create the following files:
    let targetNumber = generateRandomNumber();
    let hasPlayed = false;
    ```
-2. Now, we are going to make a `generateRandomNumber()` function that generates a random number. Right now, the range of numbers that it can be is from 1 to 5, but you can always change this.
+2. Now, we are going to make a `generateRandomNumber()` function that generates and returns a random number. Below is the line of code to put inside the `generateRandomNumber()` function. Right now, the range of numbers that it can be is from 1 to 5, but you can always change this.
    ```
-   function generateRandomNumber() {
       return Math.floor(Math.random() * 5) + 1;
-   }
    ```
-3. Now, we will make a `checkguess()` function that will check if the user input is the number that was randomly generated from the `generateRandomNumber()` function from the previous step. We are going to break this function down into two parts:
+3. Now, make a `checkguess()` function that will check if the user input is the number that was randomly generated from the `generateRandomNumber()` function from the previous step. We are going to break this function down into two parts:
 
-   Part A: Declaring variables
+   Part A: Declaring variables. After to make the `checkguess()` function, insert these lines.
    ```
-   function checkGuess() {
       const guessInput = document.getElementById('guessInput');
       const userGuess = parseInt(guesssInput.value);
       const message = document.getElementById('message');
       const playAgainButton = document.getElementById('playAgainButton');
-   }
+
    ```
 
-   Part B: Check is the user guess is the same as the random generated number. If the number is correct, display correct message and show play again button, but if number is incorrect, display incorrect message:
-   If user's guess is the same as random generated number:
+   Part B: Use an `if else` statement to check if the user guess is the same as the random generated number.
+    If the user input is equal to the random number, display correct message and show play again button:
    ```
-   if (userGuess === targetNumber) {
       showPlayAgainButton();
       message.textContent = 'Congratulations! You guessed the correct number!';
-   }
    ```
-   If user's guess is not the same as random generated number:
+   
+   `else`, if number is incorrect, display incorrect message:
    ```
-   else {
         message.textContent = 'Wrong guess. Try again!';
         message.classList.remove('success-message');
-    }
    ```
    Make sure that the if and else statements are inside the checkGuess() function.
    
