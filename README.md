@@ -101,8 +101,9 @@ Create the following files:
    message.textContent = 'Wrong guess. Try again!';
    message.classList.remove('success-message');
    ```
-   Make sure that the `if else` statements are inside the checkGuess() function.
-   
+**   Make sure that the `if else` statements are inside the checkGuess() function.
+**   
+
 5. Now we will make the `playAgain()` function that will be implemented into a `showPlayAgainButton()` function later. This function will reset the game when the play again button is pressed.
 
    Part A: Declaring variables:
