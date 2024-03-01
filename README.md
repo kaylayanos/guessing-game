@@ -89,13 +89,14 @@ Create the following files:
    ```
 
    Part B: Use an `if else` statement to check if the user guess is the same as the random generated number.
+   
     `if` the user input is equal to the random number, display correct message and show play again button:
    ```
    showPlayAgainButton();
    message.textContent = 'Congratulations! You guessed the correct number!';
    ```
    
-   `else`, if number is incorrect, display incorrect message:
+   `else`, display incorrect message:
    ```
    message.textContent = 'Wrong guess. Try again!';
    message.classList.remove('success-message');
