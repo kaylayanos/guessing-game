@@ -66,7 +66,8 @@ Create the following files:
 6. Target the `playAgainButton` id:
    Set the `margin-top` to `20px`
    Set the `background-color` to `3498db`
-  
+
+**Double check with your mentor that your html and css files are correct before moving on!**
 
 ### Part 3: JS
 1. First we are going to declare 2 variables that we will use for the other functions.
@@ -101,8 +102,7 @@ Create the following files:
    message.textContent = 'Wrong guess. Try again!';
    message.classList.remove('success-message');
    ```
-**   Make sure that the `if else` statements are inside the checkGuess() function.
-**   
+   **Make sure that the `if else` statements are inside the checkGuess() function.**
 
 5. Now we will make the `playAgain()` function that will be implemented into a `showPlayAgainButton()` function later. This function will reset the game when the play again button is pressed.
 
